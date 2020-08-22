@@ -395,6 +395,9 @@ address {
   line-height: 1.714;
   color: rgba(255, 255, 255, 0.6);
 }
+.address-contact:hover {
+  color: var(--accent-color);
+}
 .footer-section:not(:last-child) {
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
@@ -410,8 +413,6 @@ address {
   display: flex;
   list-style: none;
 }
-/* .footer-social-item {
-} */
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -472,15 +473,16 @@ address {
   margin-right: 12px;
   padding: 0 0 0 16px;
   color: var(--wite-color);
+  width: 358px;
+  height: 50px;
+  display: flex;
+  align-items: baseline;
 }
 .footer-email:focus {
   outline: none;
   border: 1px solid var(--accent-color);
 }
 
-/* .footer-email::placeholder {
-  padding-left: 16px;
-} */
 /* Модальне вікно */
 .bagdrop {
   position: fixed;
@@ -532,12 +534,6 @@ address {
   pointer-events: none;
 }
 /* modal поля вводу */
-.footer-email {
-  width: 358px;
-  height: 50px;
-  display: flex;
-  align-items: baseline;
-}
 .forma-info {
   margin: 12px 40px;
 }
