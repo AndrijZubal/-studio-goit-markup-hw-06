@@ -112,7 +112,7 @@ li.menu-list {
 
 .link:hover,
 .link:focus,
-.menu-item:hover,
+.menu-item:hover:not(.studio),
 .menu-item:focus,
 /* .contact-item:hover,
 .contact-item:focus, */
@@ -130,14 +130,20 @@ li.menu-list {
 .client {
   list-style: none;
 }
+.studio {
+  color: var(--accent-color);
+}
 
-.menu-item,
+.menu-item:not(.studio),
 .contact-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.portfolio {
+  color: var(--accent-color);
 }
 .icon-contact {
   fill: var(--dark-color);
@@ -188,7 +194,7 @@ h1 {
   color: var(--wite-color);
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid var(--accent-color);
+  /* border: 1px solid var(--accent-color); */
   outline: none;
 }
 .ocupation-box {
@@ -549,9 +555,16 @@ address {
   width: 100%;
   resize: none;
 }
+.massege:focus-within > .massege-label {
+  color: var(--accent-color);
+}
+
 .info-massege:focus {
   outline: none;
   border: 1px solid var(--accent-color);
+}
+.icon-modal:focus-within > .input-label {
+  color: var(--accent-color);
 }
 .icon-modal {
   position: relative;
@@ -567,7 +580,7 @@ address {
 
 .icon {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 15px;
   transform: translateY(-50%);
   padding: 0;

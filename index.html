@@ -22,7 +22,7 @@
             <li class="menu-list">
               <div class="line">
                 <a
-                  class="menu-item"
+                  class="menu-item studio"
                   href="#"
                   
                   >Студия</a
@@ -30,7 +30,7 @@
               </div>
             </li>
             <li class="menu-list">
-              <a class="menu-item" href="../-portfolio-goit-markup-hw-06/index.html" >Портфолио</a>
+              <a class="menu-item " href="../-portfolio-goit-markup-hw-06/index.html" >Портфолио</a>
             </li>
             <li class="menu-list">
               <a class="menu-item" href="#" >Контакты</a>
@@ -599,36 +599,43 @@
         </button>
         <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
         <form class="forma-info" action="#">
-          <label  for="name">Имя</label>
-          <div class="icon-modal">
-            <input  class="info" type="text" name="user-name" id="name"  >
+            <div class="icon-modal">
+              <label class="input-label" for="name">Имя</label>
+              <input  class="info" type="text" name="user-name" id="name"  >
               <svg class="icon" width="12" height="12">
                 <use href="../image/modal-icon.svg#icon-user"></use>
               </svg>
+              
           </div>
-          <label for="phone">Телефон</label>
           <div class="icon-modal">
-              <input class="info" type="tel" name="user-phone" id="phone"   >
+            <label class="input-label" for="phone">Телефон</label>
+            
+            <input class="info" type="tel" name="user-phone" id="phone"   >
             <svg class="icon" width="13" height="13">
               <use href="../image/modal-icon.svg#icon-phone"></use>
             </svg>
           </div  >
-          <label for="email">Почта</label>
           <div class="icon-modal">
-              <input class="info" type="email" name="user-email" id="email"   >
-              <svg class="icon" width="15" height="12">
-                <use href="../image/modal-icon.svg#icon-mail-dark"></use>
-              </svg>
+            <label class="input-label" for="email">Почта</label>
+          
+            <input class="info" type="email" name="user-email" id="email"   >
+            <svg class="icon" width="15" height="12">
+              <use href="../image/modal-icon.svg#icon-mail-dark"></use>
+            </svg>
           </div>
-          <label for="massege">Комментарий</label>
-         <textarea class="info-massege" name="massegr" id="massege" cols="30" rows="5" placeholder="Введите текст"></textarea> 
+          <div class="massege">
+             <label class="massege-label" for="massege">Комментарий</label>
+            <textarea class="info-massege" name="massegr" id="massege" cols="30" rows="5" placeholder="Введите текст"></textarea> 
+          </div>
         </form>
         <label class="container-modal modal-paragraf">
           <input type="checkbox" checked="checked">Соглашаюсь с рассылкой и принимаю<a class="modal-link" href="#">Условия договора</a>
           <span class="checkmark"></span>
         </label>
-        <button class="btn">Отправить</button>
-
+        <form >
+          <!-- <input type="submit" value="Отправить"> -->
+          <button type="submit"  class="btn" >Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
