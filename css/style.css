@@ -580,7 +580,7 @@ address {
 
 .icon {
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 15px;
   transform: translateY(-50%);
   padding: 0;
